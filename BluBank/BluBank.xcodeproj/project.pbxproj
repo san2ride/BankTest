@@ -20,6 +20,8 @@
 		F76DB5E52DB73C2D009105DB /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5E42DB73C2D009105DB /* String+Ext.swift */; };
 		F76DB5EA2DB73CC6009105DB /* APRServiceCreditScoreServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5E92DB73CC6009105DB /* APRServiceCreditScoreServiceTests.swift */; };
 		F76DB5ED2DB73DD2009105DB /* APRServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5EC2DB73DD2009105DB /* APRServiceTests.swift */; };
+		F76DB5F02DB73E99009105DB /* APRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5EF2DB73E99009105DB /* APRService.swift */; };
+		F76DB5F22DB73EB2009105DB /* CreditScoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5F12DB73EB2009105DB /* CreditScoreService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		F76DB5E42DB73C2D009105DB /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		F76DB5E92DB73CC6009105DB /* APRServiceCreditScoreServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APRServiceCreditScoreServiceTests.swift; sourceTree = "<group>"; };
 		F76DB5EC2DB73DD2009105DB /* APRServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APRServiceTests.swift; sourceTree = "<group>"; };
+		F76DB5EF2DB73E99009105DB /* APRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APRService.swift; sourceTree = "<group>"; };
+		F76DB5F12DB73EB2009105DB /* CreditScoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -127,6 +131,7 @@
 				F76DB5D32DB739A3009105DB /* Factories */,
 				F76DB5D62DB739E5009105DB /* Mocks */,
 				F76DB5D92DB73A12009105DB /* Models */,
+				F76DB5EE2DB73E79009105DB /* Services */,
 				F76DB5C42DB73796009105DB /* Preview Content */,
 				F76DB5C52DB73796009105DB /* Assets.xcassets */,
 				F76DB5C62DB73796009105DB /* BluBankApp.swift */,
@@ -208,6 +213,15 @@
 			children = (
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		F76DB5EE2DB73E79009105DB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F76DB5EF2DB73E99009105DB /* APRService.swift */,
+				F76DB5F12DB73EB2009105DB /* CreditScoreService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F76DB5F22DB73EB2009105DB /* CreditScoreService.swift in Sources */,
 				F76DB5CF2DB737FD009105DB /* EnvironmentValues+Ext.swift in Sources */,
 				F76DB5C92DB73796009105DB /* BluBankApp.swift in Sources */,
 				F76DB5D82DB73A05009105DB /* MockCreditService.swift in Sources */,
@@ -357,6 +372,7 @@
 				F76DB5D22DB7388E009105DB /* Strings+Ext.swift in Sources */,
 				F76DB5DB2DB73A96009105DB /* BankAccount.swift in Sources */,
 				F76DB5D52DB739CF009105DB /* CreditScoreServiceFactory.swift in Sources */,
+				F76DB5F02DB73E99009105DB /* APRService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
