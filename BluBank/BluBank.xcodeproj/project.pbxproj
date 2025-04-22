@@ -126,12 +126,12 @@
 		F76DB5C82DB73796009105DB /* BluBank */ = {
 			isa = PBXGroup;
 			children = (
-				F76DB5CD2DB737D2009105DB /* Enviroment Values */,
-				F76DB5D02DB73861009105DB /* Extensions */,
 				F76DB5D32DB739A3009105DB /* Factories */,
-				F76DB5D62DB739E5009105DB /* Mocks */,
 				F76DB5D92DB73A12009105DB /* Models */,
 				F76DB5EE2DB73E79009105DB /* Services */,
+				F76DB5CD2DB737D2009105DB /* Enviroment Values */,
+				F76DB5D02DB73861009105DB /* Extensions */,
+				F76DB5D62DB739E5009105DB /* Mocks */,
 				F76DB5C42DB73796009105DB /* Preview Content */,
 				F76DB5C52DB73796009105DB /* Assets.xcassets */,
 				F76DB5C62DB73796009105DB /* BluBankApp.swift */,
