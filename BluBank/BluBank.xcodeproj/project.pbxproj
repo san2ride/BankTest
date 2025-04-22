@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F76DB5C92DB73796009105DB /* BluBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5C62DB73796009105DB /* BluBankApp.swift */; };
+		F76DB5CA2DB73796009105DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5C72DB73796009105DB /* ContentView.swift */; };
+		F76DB5CB2DB73796009105DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76DB5C32DB73796009105DB /* Preview Assets.xcassets */; };
+		F76DB5CC2DB73796009105DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76DB5C52DB73796009105DB /* Assets.xcassets */; };
+		F76DB5CF2DB737FD009105DB /* EnvironmentValues+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5CE2DB737FD009105DB /* EnvironmentValues+Ext.swift */; };
+		F76DB5D22DB7388E009105DB /* Strings+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5D12DB7388E009105DB /* Strings+Ext.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F76DB5A72DB73756009105DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F76DB58E2DB73753009105DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F76DB5952DB73753009105DB;
+			remoteInfo = BluBank;
+		};
+		F76DB5B12DB73756009105DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F76DB58E2DB73753009105DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F76DB5952DB73753009105DB;
+			remoteInfo = BluBank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F76DB5962DB73753009105DB /* BluBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76DB5A62DB73756009105DB /* BluBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76DB5B02DB73756009105DB /* BluBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76DB5C32DB73796009105DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F76DB5C52DB73796009105DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F76DB5C62DB73796009105DB /* BluBankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluBankApp.swift; sourceTree = "<group>"; };
+		F76DB5C72DB73796009105DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F76DB5CE2DB737FD009105DB /* EnvironmentValues+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Ext.swift"; sourceTree = "<group>"; };
+		F76DB5D12DB7388E009105DB /* Strings+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Ext.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F76DB5A92DB73756009105DB /* BluBankTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BluBankTests;
+			sourceTree = "<group>";
+		};
+		F76DB5B32DB73756009105DB /* BluBankUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BluBankUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F76DB5932DB73753009105DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76DB5A32DB73756009105DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76DB5AD2DB73756009105DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F76DB58D2DB73753009105DB = {
+			isa = PBXGroup;
+			children = (
+				F76DB5C82DB73796009105DB /* BluBank */,
+				F76DB5A92DB73756009105DB /* BluBankTests */,
+				F76DB5B32DB73756009105DB /* BluBankUITests */,
+				F76DB5972DB73753009105DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F76DB5972DB73753009105DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F76DB5962DB73753009105DB /* BluBank.app */,
+				F76DB5A62DB73756009105DB /* BluBankTests.xctest */,
+				F76DB5B02DB73756009105DB /* BluBankUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F76DB5C42DB73796009105DB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F76DB5C32DB73796009105DB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F76DB5C82DB73796009105DB /* BluBank */ = {
+			isa = PBXGroup;
+			children = (
+				F76DB5CD2DB737D2009105DB /* Enviroment Values */,
+				F76DB5D02DB73861009105DB /* Extensions */,
+				F76DB5C42DB73796009105DB /* Preview Content */,
+				F76DB5C52DB73796009105DB /* Assets.xcassets */,
+				F76DB5C62DB73796009105DB /* BluBankApp.swift */,
+				F76DB5C72DB73796009105DB /* ContentView.swift */,
+			);
+			path = BluBank;
+			sourceTree = "<group>";
+		};
+		F76DB5CD2DB737D2009105DB /* Enviroment Values */ = {
+			isa = PBXGroup;
+			children = (
+				F76DB5CE2DB737FD009105DB /* EnvironmentValues+Ext.swift */,
+			);
+			path = "Enviroment Values";
+			sourceTree = "<group>";
+		};
+		F76DB5D02DB73861009105DB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F76DB5D12DB7388E009105DB /* Strings+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F76DB5952DB73753009105DB /* BluBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76DB5BA2DB73756009105DB /* Build configuration list for PBXNativeTarget "BluBank" */;
+			buildPhases = (
+				F76DB5922DB73753009105DB /* Sources */,
+				F76DB5932DB73753009105DB /* Frameworks */,
+				F76DB5942DB73753009105DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BluBank;
+			packageProductDependencies = (
+			);
+			productName = BluBank;
+			productReference = F76DB5962DB73753009105DB /* BluBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F76DB5A52DB73756009105DB /* BluBankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76DB5BD2DB73756009105DB /* Build configuration list for PBXNativeTarget "BluBankTests" */;
+			buildPhases = (
+				F76DB5A22DB73756009105DB /* Sources */,
+				F76DB5A32DB73756009105DB /* Frameworks */,
+				F76DB5A42DB73756009105DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F76DB5A82DB73756009105DB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F76DB5A92DB73756009105DB /* BluBankTests */,
+			);
+			name = BluBankTests;
+			packageProductDependencies = (
+			);
+			productName = BluBankTests;
+			productReference = F76DB5A62DB73756009105DB /* BluBankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F76DB5AF2DB73756009105DB /* BluBankUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76DB5C02DB73756009105DB /* Build configuration list for PBXNativeTarget "BluBankUITests" */;
+			buildPhases = (
+				F76DB5AC2DB73756009105DB /* Sources */,
+				F76DB5AD2DB73756009105DB /* Frameworks */,
+				F76DB5AE2DB73756009105DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F76DB5B22DB73756009105DB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F76DB5B32DB73756009105DB /* BluBankUITests */,
+			);
+			name = BluBankUITests;
+			packageProductDependencies = (
+			);
+			productName = BluBankUITests;
+			productReference = F76DB5B02DB73756009105DB /* BluBankUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F76DB58E2DB73753009105DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					F76DB5952DB73753009105DB = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					F76DB5A52DB73756009105DB = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = F76DB5952DB73753009105DB;
+					};
+					F76DB5AF2DB73756009105DB = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = F76DB5952DB73753009105DB;
+					};
+				};
+			};
+			buildConfigurationList = F76DB5912DB73753009105DB /* Build configuration list for PBXProject "BluBank" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F76DB58D2DB73753009105DB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F76DB5972DB73753009105DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F76DB5952DB73753009105DB /* BluBank */,
+				F76DB5A52DB73756009105DB /* BluBankTests */,
+				F76DB5AF2DB73756009105DB /* BluBankUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F76DB5942DB73753009105DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76DB5CB2DB73796009105DB /* Preview Assets.xcassets in Resources */,
+				F76DB5CC2DB73796009105DB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76DB5A42DB73756009105DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76DB5AE2DB73756009105DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F76DB5922DB73753009105DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76DB5CF2DB737FD009105DB /* EnvironmentValues+Ext.swift in Sources */,
+				F76DB5C92DB73796009105DB /* BluBankApp.swift in Sources */,
+				F76DB5D22DB7388E009105DB /* Strings+Ext.swift in Sources */,
+				F76DB5CA2DB73796009105DB /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76DB5A22DB73756009105DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76DB5AC2DB73756009105DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F76DB5A82DB73756009105DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F76DB5952DB73753009105DB /* BluBank */;
+			targetProxy = F76DB5A72DB73756009105DB /* PBXContainerItemProxy */;
+		};
+		F76DB5B22DB73756009105DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F76DB5952DB73753009105DB /* BluBank */;
+			targetProxy = F76DB5B12DB73756009105DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F76DB5B82DB73756009105DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F76DB5B92DB73756009105DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F76DB5BB2DB73756009105DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BluBank/Preview Content\"";
+				DEVELOPMENT_TEAM = 6D9CKTK39V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = trvl.BluBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F76DB5BC2DB73756009105DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BluBank/Preview Content\"";
+				DEVELOPMENT_TEAM = 6D9CKTK39V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = trvl.BluBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F76DB5BE2DB73756009105DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6D9CKTK39V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = trvl.BluBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluBank.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BluBank";
+			};
+			name = Debug;
+		};
+		F76DB5BF2DB73756009105DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6D9CKTK39V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = trvl.BluBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluBank.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BluBank";
+			};
+			name = Release;
+		};
+		F76DB5C12DB73756009105DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6D9CKTK39V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = trvl.BluBankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BluBank;
+			};
+			name = Debug;
+		};
+		F76DB5C22DB73756009105DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6D9CKTK39V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = trvl.BluBankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BluBank;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F76DB5912DB73753009105DB /* Build configuration list for PBXProject "BluBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76DB5B82DB73756009105DB /* Debug */,
+				F76DB5B92DB73756009105DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F76DB5BA2DB73756009105DB /* Build configuration list for PBXNativeTarget "BluBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76DB5BB2DB73756009105DB /* Debug */,
+				F76DB5BC2DB73756009105DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F76DB5BD2DB73756009105DB /* Build configuration list for PBXNativeTarget "BluBankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76DB5BE2DB73756009105DB /* Debug */,
+				F76DB5BF2DB73756009105DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F76DB5C02DB73756009105DB /* Build configuration list for PBXNativeTarget "BluBankUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76DB5C12DB73756009105DB /* Debug */,
+				F76DB5C22DB73756009105DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F76DB58E2DB73753009105DB /* Project object */;
+}
