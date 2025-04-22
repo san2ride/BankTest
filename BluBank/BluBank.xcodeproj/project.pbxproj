@@ -16,6 +16,10 @@
 		F76DB5D82DB73A05009105DB /* MockCreditService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5D72DB73A05009105DB /* MockCreditService.swift */; };
 		F76DB5DB2DB73A96009105DB /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5DA2DB73A96009105DB /* BankAccount.swift */; };
 		F76DB5DD2DB73AE1009105DB /* BankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5DC2DB73AE1009105DB /* BankView.swift */; };
+		F76DB5E02DB73BE5009105DB /* BankAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5DE2DB73BE5009105DB /* BankAccountTests.swift */; };
+		F76DB5E52DB73C2D009105DB /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5E42DB73C2D009105DB /* String+Ext.swift */; };
+		F76DB5EA2DB73CC6009105DB /* APRServiceCreditScoreServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5E92DB73CC6009105DB /* APRServiceCreditScoreServiceTests.swift */; };
+		F76DB5ED2DB73DD2009105DB /* APRServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5EC2DB73DD2009105DB /* APRServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,14 +52,13 @@
 		F76DB5D72DB73A05009105DB /* MockCreditService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCreditService.swift; sourceTree = "<group>"; };
 		F76DB5DA2DB73A96009105DB /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
 		F76DB5DC2DB73AE1009105DB /* BankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankView.swift; sourceTree = "<group>"; };
+		F76DB5DE2DB73BE5009105DB /* BankAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountTests.swift; sourceTree = "<group>"; };
+		F76DB5E42DB73C2D009105DB /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		F76DB5E92DB73CC6009105DB /* APRServiceCreditScoreServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APRServiceCreditScoreServiceTests.swift; sourceTree = "<group>"; };
+		F76DB5EC2DB73DD2009105DB /* APRServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APRServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		F76DB5A92DB73756009105DB /* BluBankTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BluBankTests;
-			sourceTree = "<group>";
-		};
 		F76DB5B32DB73756009105DB /* BluBankUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BluBankUITests;
@@ -92,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				F76DB5C82DB73796009105DB /* BluBank */,
-				F76DB5A92DB73756009105DB /* BluBankTests */,
+				F76DB5DF2DB73BE5009105DB /* BluBankTests */,
 				F76DB5B32DB73756009105DB /* BluBankUITests */,
 				F76DB5972DB73753009105DB /* Products */,
 			);
@@ -172,6 +175,41 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		F76DB5DF2DB73BE5009105DB /* BluBankTests */ = {
+			isa = PBXGroup;
+			children = (
+				F76DB5E12DB73BE8009105DB /* Extensions Tests */,
+				F76DB5E62DB73C50009105DB /* Integration Tests */,
+				F76DB5EB2DB73D3C009105DB /* Mocks */,
+				F76DB5DE2DB73BE5009105DB /* BankAccountTests.swift */,
+				F76DB5EC2DB73DD2009105DB /* APRServiceTests.swift */,
+			);
+			path = BluBankTests;
+			sourceTree = "<group>";
+		};
+		F76DB5E12DB73BE8009105DB /* Extensions Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F76DB5E42DB73C2D009105DB /* String+Ext.swift */,
+			);
+			path = "Extensions Tests";
+			sourceTree = "<group>";
+		};
+		F76DB5E62DB73C50009105DB /* Integration Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F76DB5E92DB73CC6009105DB /* APRServiceCreditScoreServiceTests.swift */,
+			);
+			path = "Integration Tests";
+			sourceTree = "<group>";
+		};
+		F76DB5EB2DB73D3C009105DB /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,9 +244,6 @@
 			);
 			dependencies = (
 				F76DB5A82DB73756009105DB /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				F76DB5A92DB73756009105DB /* BluBankTests */,
 			);
 			name = BluBankTests;
 			packageProductDependencies = (
@@ -329,6 +364,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F76DB5EA2DB73CC6009105DB /* APRServiceCreditScoreServiceTests.swift in Sources */,
+				F76DB5E52DB73C2D009105DB /* String+Ext.swift in Sources */,
+				F76DB5E02DB73BE5009105DB /* BankAccountTests.swift in Sources */,
+				F76DB5ED2DB73DD2009105DB /* APRServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
