@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F76DB5C92DB73796009105DB /* BluBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5C62DB73796009105DB /* BluBankApp.swift */; };
-		F76DB5CA2DB73796009105DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5C72DB73796009105DB /* ContentView.swift */; };
 		F76DB5CB2DB73796009105DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76DB5C32DB73796009105DB /* Preview Assets.xcassets */; };
 		F76DB5CC2DB73796009105DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76DB5C52DB73796009105DB /* Assets.xcassets */; };
 		F76DB5CF2DB737FD009105DB /* EnvironmentValues+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5CE2DB737FD009105DB /* EnvironmentValues+Ext.swift */; };
 		F76DB5D22DB7388E009105DB /* Strings+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5D12DB7388E009105DB /* Strings+Ext.swift */; };
+		F76DB5D52DB739CF009105DB /* CreditScoreServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5D42DB739CF009105DB /* CreditScoreServiceFactory.swift */; };
+		F76DB5D82DB73A05009105DB /* MockCreditService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5D72DB73A05009105DB /* MockCreditService.swift */; };
+		F76DB5DB2DB73A96009105DB /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5DA2DB73A96009105DB /* BankAccount.swift */; };
+		F76DB5DD2DB73AE1009105DB /* BankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5DC2DB73AE1009105DB /* BankView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +42,12 @@
 		F76DB5C32DB73796009105DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F76DB5C52DB73796009105DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F76DB5C62DB73796009105DB /* BluBankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluBankApp.swift; sourceTree = "<group>"; };
-		F76DB5C72DB73796009105DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F76DB5CE2DB737FD009105DB /* EnvironmentValues+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Ext.swift"; sourceTree = "<group>"; };
 		F76DB5D12DB7388E009105DB /* Strings+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Ext.swift"; sourceTree = "<group>"; };
+		F76DB5D42DB739CF009105DB /* CreditScoreServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreServiceFactory.swift; sourceTree = "<group>"; };
+		F76DB5D72DB73A05009105DB /* MockCreditService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCreditService.swift; sourceTree = "<group>"; };
+		F76DB5DA2DB73A96009105DB /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
+		F76DB5DC2DB73AE1009105DB /* BankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -115,10 +121,13 @@
 			children = (
 				F76DB5CD2DB737D2009105DB /* Enviroment Values */,
 				F76DB5D02DB73861009105DB /* Extensions */,
+				F76DB5D32DB739A3009105DB /* Factories */,
+				F76DB5D62DB739E5009105DB /* Mocks */,
+				F76DB5D92DB73A12009105DB /* Models */,
 				F76DB5C42DB73796009105DB /* Preview Content */,
 				F76DB5C52DB73796009105DB /* Assets.xcassets */,
 				F76DB5C62DB73796009105DB /* BluBankApp.swift */,
-				F76DB5C72DB73796009105DB /* ContentView.swift */,
+				F76DB5DC2DB73AE1009105DB /* BankView.swift */,
 			);
 			path = BluBank;
 			sourceTree = "<group>";
@@ -137,6 +146,30 @@
 				F76DB5D12DB7388E009105DB /* Strings+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F76DB5D32DB739A3009105DB /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				F76DB5D42DB739CF009105DB /* CreditScoreServiceFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		F76DB5D62DB739E5009105DB /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F76DB5D72DB73A05009105DB /* MockCreditService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		F76DB5D92DB73A12009105DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F76DB5DA2DB73A96009105DB /* BankAccount.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,8 +317,11 @@
 			files = (
 				F76DB5CF2DB737FD009105DB /* EnvironmentValues+Ext.swift in Sources */,
 				F76DB5C92DB73796009105DB /* BluBankApp.swift in Sources */,
+				F76DB5D82DB73A05009105DB /* MockCreditService.swift in Sources */,
+				F76DB5DD2DB73AE1009105DB /* BankView.swift in Sources */,
 				F76DB5D22DB7388E009105DB /* Strings+Ext.swift in Sources */,
-				F76DB5CA2DB73796009105DB /* ContentView.swift in Sources */,
+				F76DB5DB2DB73A96009105DB /* BankAccount.swift in Sources */,
+				F76DB5D52DB739CF009105DB /* CreditScoreServiceFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
