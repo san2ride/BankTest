@@ -37,4 +37,36 @@ struct BankAccountTests {
             try bankAccount.deposit(amount: -10, depositType: .cash)
         })
     }
+    @Test
+    func withdrawing_amount_descreses_balance() {
+        let bankAccount = BankAccount(accountNumber: "123456", balance: 500)
+        bankAccount.withdraw(amount: 200, withdrawType: .check)
+        #expect(bankAccount.balance == 300)
+    }
+    
+    @Test
+    func withdrawing_with_insufficient_balance_results_in_penalty() {
+        let bankAccount = BankAccount(accountNumber: "123456", balance: 500)
+        bankAccount.withdraw(amount: 600, withdrawType: .check)
+        
+        #expect(bankAccount.balance == 490)
+    }
+    @Test
+    func depositing_amount_is_added_to_transaction_history() {
+        let bankAccount = BankAccount(accountNumber: "123456", balance: 500)
+        try? bankAccount.deposit(amount: 10, depositType: .check)
+        
+        #expect(bankAccount.transactions.count == 1, "Transactions was not incremnent after deposit.")
+        #expect(bankAccount.transactions[0].amount == 10, "Transaction amount is not matching.")
+        #expect(bankAccount.transactions[0].transactionType == TransactionType.deposit, "Transaction type is not matching.")
+    }
+    @Test
+    func withdrawing_amount_is_added_to_transaction_history() async throws {
+        let bankAccount = BankAccount(accountNumber: "123456", balance: 500)
+        bankAccount.withdraw(amount: 200, withdrawType: .check)
+        
+        #expect(bankAccount.transactions.count == 1, "Transaction was not added after withdrawl.")
+        #expect(bankAccount.transactions[0].amount == 200, "Transaction amount does not match>")
+        #expect(bankAccount.transactions[0].transactionType == TransactionType.withdraw, "Transaction type does not match")
+    }
 }
