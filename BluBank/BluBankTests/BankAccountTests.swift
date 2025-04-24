@@ -14,7 +14,7 @@ struct BankAccountTests {
         // ARRANGE
         let bankAccount = BankAccount(accountNumber: "123456", balance: 500)
         // ACT
-        bankAccount.deposit(amount: 200, depositType: depositType)
+        try? bankAccount.deposit(amount: 200, depositType: depositType)
         // ASSERT
         #expect(bankAccount.balance == 700)
     }
@@ -22,11 +22,19 @@ struct BankAccountTests {
     func depositing_using_transfer_type_charges_fee() {
         let bankAccount = BankAccount(accountNumber: "123456", balance: 500)
         
-        let feePercenatge = 0.02 // 2%
+        // let feePercenatge = 0.02 // 2%
         let depositAmount = 200.0
         let expectedBalance = 696.0
         
-        bankAccount.deposit(amount: depositAmount, depositType: .transfer)
+        try? bankAccount.deposit(amount: depositAmount, depositType: .transfer)
         #expect(bankAccount.balance == expectedBalance)
+    }
+    @Test
+    func depositing_negative_amount_results_in_invalid_amount_error() {
+        let bankAccount = BankAccount(accountNumber: "123456", balance: 500)
+        
+        #expect(throws: BankAccountError.invalidAmount, "Depositing negative amount did not throw an error.", performing: {
+            try bankAccount.deposit(amount: -10, depositType: .cash)
+        })
     }
 }

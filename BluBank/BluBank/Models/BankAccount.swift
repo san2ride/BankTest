@@ -7,6 +7,10 @@
 
 import Foundation
 
+enum BankAccountError: Error {
+    case invalidAmount
+}
+
 enum DepositType {
     case check
     case cash
@@ -22,9 +26,12 @@ class BankAccount {
         self.balance = balance
     }
     
-    func deposit(amount: Double, depositType: DepositType) {
+    func deposit(amount: Double, depositType: DepositType) throws {
         
         let transferFeePercentage = 0.02 // 2%
+        if amount < 0 {
+            throw BankAccountError.invalidAmount
+        }
         switch depositType {
             case .cash, .check:
                 self.balance += amount
