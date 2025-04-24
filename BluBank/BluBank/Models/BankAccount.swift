@@ -23,6 +23,14 @@ class BankAccount {
     }
     
     func deposit(amount: Double, depositType: DepositType) {
-        self.balance += amount
+        
+        let transferFeePercentage = 0.02 // 2%
+        switch depositType {
+            case .cash, .check:
+                self.balance += amount
+            case .transfer:
+                let fee = amount * transferFeePercentage
+                self.balance += (amount - fee)
+        }
     }
 }

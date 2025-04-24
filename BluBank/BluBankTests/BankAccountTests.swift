@@ -18,4 +18,15 @@ struct BankAccountTests {
         // ASSERT
         #expect(bankAccount.balance == 700)
     }
+    @Test
+    func depositing_using_transfer_type_charges_fee() {
+        let bankAccount = BankAccount(accountNumber: "123456", balance: 500)
+        
+        let feePercenatge = 0.02 // 2%
+        let depositAmount = 200.0
+        let expectedBalance = 696.0
+        
+        bankAccount.deposit(amount: depositAmount, depositType: .transfer)
+        #expect(bankAccount.balance == expectedBalance)
+    }
 }
