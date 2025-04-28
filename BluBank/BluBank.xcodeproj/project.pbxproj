@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F759A1912DBFCED100B98F1D /* MockCreditScoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F759A1902DBFCED100B98F1D /* MockCreditScoreService.swift */; };
 		F76DB5C92DB73796009105DB /* BluBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DB5C62DB73796009105DB /* BluBankApp.swift */; };
 		F76DB5CB2DB73796009105DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76DB5C32DB73796009105DB /* Preview Assets.xcassets */; };
 		F76DB5CC2DB73796009105DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76DB5C52DB73796009105DB /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F759A1902DBFCED100B98F1D /* MockCreditScoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCreditScoreService.swift; sourceTree = "<group>"; };
 		F76DB5962DB73753009105DB /* BluBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76DB5A62DB73756009105DB /* BluBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76DB5B02DB73756009105DB /* BluBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +213,7 @@
 		F76DB5EB2DB73D3C009105DB /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				F759A1902DBFCED100B98F1D /* MockCreditScoreService.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 			files = (
 				F76DB5EA2DB73CC6009105DB /* APRServiceCreditScoreServiceTests.swift in Sources */,
 				F76DB5E52DB73C2D009105DB /* String+Ext.swift in Sources */,
+				F759A1912DBFCED100B98F1D /* MockCreditScoreService.swift in Sources */,
 				F76DB5E02DB73BE5009105DB /* BankAccountTests.swift in Sources */,
 				F76DB5ED2DB73DD2009105DB /* APRServiceTests.swift in Sources */,
 			);
