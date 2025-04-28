@@ -15,6 +15,8 @@ struct MockCreditScoreService: CreditScoreServiceProtocol {
                 return CreditScore(score: 720, lastUpdated: "02/15/2025", reportedBy: "Experian")
             case "888-65-4321": // Bad Credit Score
                 return CreditScore(score: 550, lastUpdated: "01/10/2025", reportedBy: "Equifax")
+            case "111-11-1111":
+                return CreditScore(score: nil, lastUpdated: "01/10/2025", reportedBy: "Equifax")
             default: // No Credit Score
                 return nil
         }

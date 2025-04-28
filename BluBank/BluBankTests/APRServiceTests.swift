@@ -18,4 +18,14 @@ struct APRServiceTests {
         
         #expect(expectedAPRRange.contains(apr))
     }
+    @Test
+    func apr_calculation_throw_unavailable_score_error_for_valid_ssn_with_no_credit_history() async {
+        let ssn = "111-11-1111"
+        let aprService = APRService(creditScoreService: MockCreditScoreService())
+        
+        await #expect(throws: CreditScoreServiceError.unavailable, "Error not thrown even though credit score does not exist for this ssn\(ssn)",
+                      performing: {
+            try await aprService.getAPR(ssn: ssn)
+        })
+    }
 }
